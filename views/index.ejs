@@ -1,0 +1,70 @@
+<%- include partials/header.ejs %>
+
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <div class="jumbotron" style="background-color: #e0e0e0;">
+      <% if (title == "Home") { %>
+      <div class="column_attr clearfix" >
+      <h1 class="display-2"><b>Hi, my name is Kautuk</b></h1>
+      <h3>My goal is to work as a <br><b>Game Programmer</b> in the near future. <br>Or a Software Programmer</h3>
+      <a class="btn btn-secondary" href="/products" role="button">My Products</a>
+      </div>
+
+      <% } else if (title == "About") { %>
+      <h1 class="display-3"><b>Kautuk Udavant</b></h1>
+      <div>
+        <img src="/Assets/images/Kautuk.jpg" alt="Kautuk png" class="img-thumbnail" width="250" height="250" style="float:right"/>
+      </div>
+      <span>I was born in India, my family moved to Canada in 2009 when i was about 8 years old I used to play a lot of games. Few years later I was in high school. This is when I started to learn about coding such as HTML, Python, and JavaScript. I ended up really liking coding but i also liked gaming so I decided merge the two and pursue it as a career. I look forward to keep learning new things about coding and learn all the different languages in the following years.</span>
+      
+      <% } else if (title == "Products") { %>
+        <h1 class="display-4">My Products</h1>
+        <ul class="list-unstyled">
+          <li class="media">
+            <img src="..." class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">PAC-MAN</h5>
+              This is a link to my github repository for the pac-man game I recreated. Feel free to download it and give it a try!
+            </div>
+          </li>
+          <li class="media my-4">
+            <img src="..." class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">List-based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </li>
+          <li class="media">
+            <img src="..." class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">List-based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </li>
+        </ul>
+
+
+      <% } else if (title == "Services") { %>
+      <h1 class="display-4">I am very enthusiastic</h1>
+      
+      <% } else if (title == "Contact") { %>
+      <h1 class="display-4">I am very enthusiastic</h1>
+      <% } %>
+      
+
+      
+      
+      
+    </div>
+  </main>
+
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
+
