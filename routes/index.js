@@ -30,4 +30,8 @@ router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact'});
 });
 
+router.get('/submit', function(req, res, next){
+  res.render('index', { title: 'Submit'});
+});
+
 module.exports = router;
